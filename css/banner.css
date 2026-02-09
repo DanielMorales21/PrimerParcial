@@ -1,0 +1,185 @@
+.banner-azul {
+    background-color: #0d1b3e; 
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.banner-azul .contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+}
+
+.contenedor-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.contenido-hero {
+    width: 50%;
+}
+
+.titulo-hero {
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.descripcion-hero {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dce5f2;
+    margin-bottom: 35px;
+    max-width: 90%;
+}
+
+.acciones-hero {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.hero .boton-primario {
+    color: #333 !important;
+}
+
+.enlace-secundario {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff; 
+    transition: all 0.3s ease;
+}
+
+.enlace-secundario:hover {
+    color: #f1b924; 
+    border-bottom: 1px solid #f1b924; 
+}
+
+.imagenes-hero {
+    width: 45%;
+    position: relative;
+    height: 450px;
+}
+
+
+.envoltura-imagen-grande {
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    border-radius: 0 100px 0 0; 
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+.envoltura-imagen-pequena {
+    width: 55%;
+    position: absolute;
+    bottom: 20px;
+    right: 0; 
+    border: 8px solid #0d1b3e;
+    border-radius: 0 0 0 60px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+
+/* SECCIÓN CTA OSCURA */
+.seccion-cta-oscura {
+    padding: 100px 0; 
+    text-align: center; 
+}
+
+.seccion-cta-oscura .contenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 40px;              
+}
+
+.seccion-cta-oscura h2 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.acciones-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.seccion-cta-oscura .boton-primario {
+    background-color: #f1b924;
+    color: #333; 
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 30px; 
+    border: 2px solid #f1b924; 
+    border-radius: 4px;
+    min-width: 200px; 
+}
+
+.pantalla-telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    background-color: transparent; 
+    border: 2px solid #f1b924;     
+    color: #f1b924;                
+    
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 30px; 
+    border-radius: 4px;
+    min-width: 200px; 
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pantalla-telefono .icono-tel {
+    color: #f1b924;
+    font-size: 16px;
+}
+
+.pantalla-telefono:hover {
+    background-color: #f1b924; 
+    color: #333;               
+}
+
+.pantalla-telefono:hover .icono-tel {
+    color: #333;
+}

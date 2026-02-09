@@ -1,0 +1,105 @@
+.encabezado-principal {
+    display: flex;
+    align-items: center; 
+    padding: 0 5%; 
+    background-color: #fff;
+    height: 90px; 
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #f0f0f0; 
+    position: sticky;
+    top: 0;
+    width: 100%;     
+    z-index: 1000;  
+}
+
+.logotipo img {
+    height: 55px; 
+    display: block;
+    width: auto;
+}
+
+.menu-navegacion {
+    margin-left: auto; 
+    margin-right: 40px; 
+}
+
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navegacion ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 15px;
+    font-weight: 500;
+    position: relative; 
+    padding-bottom: 5px; 
+}
+
+.menu-navegacion ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%; 
+    height: 2px; 
+    background-color: #f1b924;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.menu-navegacion ul li a:hover::after {
+    width: 100%;
+}
+
+.menu-navegacion ul li a:hover {
+    color: #333; 
+}
+
+.contacto-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+}
+
+.icono-telefono i {
+    color: #f1b924; 
+    font-size: 16px;
+    margin-right: 8px; 
+}
+
+.numero-telefono {
+    font-weight: 700; 
+    color: #222;
+    font-size: 16px;
+}
+
+.icono-carrito {
+    background-color: #f7f7f7; 
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.icono-carrito i {
+    color: #888; 
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.icono-carrito:hover {
+    background-color: #f7f7f7; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.icono-carrito:hover i {
+    color: #555; 
+}
